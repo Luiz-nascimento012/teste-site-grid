@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: rgb(65, 65, 244);
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(2, 50px) repeat(3, 1fr) 50px / repeat(5, 1fr);
+}
+
+header {
+    background-color: brown;
+    grid-area: 1 / 1 / span 1 / span 5;
+}
+
+nav.menu {
+    background-color: brown;
+    grid-area: 2 / 1 / span 1 / span 5;
+}
+
+
+section.conteudo {
+    background-color: white;
+    grid-area: 3 / 1 / span 3 / span 4;
+}
+
+
+aside.ads {
+    color: white;
+    grid-area: 3 / 5 / span 3 / span 1;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    grid-area: 6 / 1 / span 1/ -1;
+    text-align: center;
+}
