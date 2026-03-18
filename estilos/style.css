@@ -21,9 +21,22 @@ header {
     grid-area: 1 / 1 / span 1 / span 5;
 }
 
+header h1 {
+    text-align: center;
+}
+
 nav.menu {
     background-color: brown;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
     grid-area: 2 / 1 / span 1 / span 5;
+}
+
+nav.menu a {
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -32,16 +45,36 @@ section.conteudo {
     grid-area: 3 / 1 / span 3 / span 4;
 }
 
+section.conteudo h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+section.conteudo p {
+    text-indent: 30px;
+    text-align: justify;
+    margin: 10px;
+}
+
 
 aside.ads {
     color: white;
     grid-area: 3 / 5 / span 3 / span 1;
 }
 
+aside.ads h2 {
+    text-indent: 30px;
+    text-align: justify;
+    padding: 10px;
+}
 
 footer {
     background-color: black;
     color: white;
     grid-area: 6 / 1 / span 1/ -1;
+}
+
+footer h2 {
     text-align: center;
+    padding: 10px;
 }
