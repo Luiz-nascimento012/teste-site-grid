@@ -34,6 +34,18 @@ nav.menu {
     grid-area: 2 / 1 / span 1 / span 5;
 }
 
+nav.menu button {
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+nav.menu button:hover {
+    cursor: pointer;
+}
+
 nav.menu a {
     color: white;
     text-decoration: none;
@@ -41,7 +53,6 @@ nav.menu a {
 
 
 section.conteudo {
-    background-color: white;
     grid-area: 3 / 1 / span 3 / span 4;
 }
 
@@ -69,12 +80,20 @@ aside.ads h2 {
 }
 
 footer {
-    background-color: black;
-    color: white;
     grid-area: 6 / 1 / span 1/ -1;
 }
 
 footer h2 {
     text-align: center;
     padding: 10px;
+}
+
+.dark {
+    background: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
 }
